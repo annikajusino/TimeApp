@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29807698436",
+    "firebase_url": "https://my-first-app-e849f.firebaseio.com",
+    "project_id": "my-first-app-e849f",
+    "storage_bucket": "my-first-app-e849f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29807698436:android:5d4c1a0bf8ed020e",
+        "android_client_info": {
+          "package_name": "com.test.annika.timeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29807698436-k48qeid4uo6ctjtr31d5807smid2keop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.annika.timeapp",
+            "certificate_hash": "8fddc678fb1484a389d83a332099fcd0644c12ad"
+          }
+        },
+        {
+          "client_id": "29807698436-43a8tc9shk5id0kjl8u4qmoqpf8va8o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3WeielgGW8X49aI5_jn_vKqL_3FK0cnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29807698436-43a8tc9shk5id0kjl8u4qmoqpf8va8o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

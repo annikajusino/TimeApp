@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TimeApp</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Register</string>
+    <string name="username_header">Username</string>
+    <string name="password_header">Password</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">(123)456–7980</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirmpassword_hint">Confirm Password</string>
+    <string name="welcome">Welcome!</string>
+
+</resources>
