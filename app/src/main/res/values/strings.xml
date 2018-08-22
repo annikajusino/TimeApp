@@ -12,5 +12,6 @@
     <string name="password_hint">Password</string>
     <string name="confirmpassword_hint">Confirm Password</string>
     <string name="welcome">Welcome!</string>
+    <string name="RUin">You are not logged in.</string>
 
 </resources>
