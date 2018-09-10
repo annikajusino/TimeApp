@@ -1,15 +1,13 @@
 package com.test.annika.timeapp;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,8 +35,8 @@ public class RegisterActivity extends AppCompatActivity {
         EditText LastName = findViewById(R.id.etLastname);
         EditText Email = findViewById(R.id.etEmail);
         EditText Phone = findViewById(R.id.etPhone);
-        EditText Username = findViewById(R.id.etUsername);
-        EditText Password = findViewById(R.id.etPassword1);
+        final EditText Username = findViewById(R.id.etRegUsername);
+        final EditText Password = findViewById(R.id.etPassword1);
         EditText ConfirmPassword = findViewById(R.id.etPassword2);
 
         Button Register = findViewById(R.id.bRegister);
@@ -46,19 +44,19 @@ public class RegisterActivity extends AppCompatActivity {
         //Will need to add something to make sure passwords are the same and if a user already exists
         //Will also probably need to add some regex
 
+        //TODO: Make this username, not email
+
+
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createAccount();
+                createAccount(Username.getText().toString().trim(), Password.getText().toString().trim());
             }
         });
-
     }
 
-    private void createAccount(){
-        EditText Email = findViewById(R.id.etEmail);
-        EditText Password = findViewById(R.id.etPassword1);
-        mAuth.createUserWithEmailAndPassword(Email.getText().toString().trim(),Password.getText().toString().trim())
+    public void createAccount(String email, String password){
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

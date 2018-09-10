@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserPageActivity" />
+        <activity android:name=".ChatActivity" />
+
     </application>
 
 </manifest>

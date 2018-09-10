@@ -13,5 +13,13 @@
     <string name="confirmpassword_hint">Confirm Password</string>
     <string name="welcome">Welcome!</string>
     <string name="RUin">You are not logged in.</string>
+    <string name="MatchingUserHeader">Matching Users</string>
+    <string name="ReturnToSearch">Return To Search</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="fresh_config" />
+    <string name="invite_menu_label" />
+    <string name="cause_crash" />
+    <string name="chat">Chat</string>
+    <string name="sendButtonText">Send</string>
 
 </resources>
