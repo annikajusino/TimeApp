@@ -19,6 +19,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserPageActivity" />
         <activity android:name=".ChatActivity" />
+        <activity android:name=".EventDirectoryActivity" />
 
     </application>
 

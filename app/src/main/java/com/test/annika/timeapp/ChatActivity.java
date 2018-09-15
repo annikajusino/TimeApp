@@ -244,13 +244,13 @@ public class ChatActivity extends AppCompatActivity
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Message friendlyMessage = new
+                Message singleMessage = new
                         Message(mMessageEditText.getText().toString(),
                         mUsername,
                         mPhotoUrl,
                         null /* no image */);
                 mFirebaseDatabaseReference.child(MESSAGES_CHILD)
-                        .push().setValue(friendlyMessage);
+                        .push().setValue(singleMessage);
                 mMessageEditText.setText("");
             }
         });

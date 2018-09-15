@@ -19,6 +19,7 @@ public class UserPageActivity extends AppCompatActivity {
 
         Button SignOut = findViewById(R.id.bSignOut);
         Button Chat = findViewById(R.id.bChat);
+        Button Listings = findViewById(R.id.bListings);
 
         SignOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +41,16 @@ public class UserPageActivity extends AppCompatActivity {
 
             }
         });
+
+        Listings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent startListingsActivity = new Intent(UserPageActivity.this, EventDirectoryActivity.class);
+                startActivity(startListingsActivity);
+
+            }
+        });
+
     }
 }
