@@ -17,11 +17,15 @@ public class EventDirectoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event_directory);
         ListingsRecycler = findViewById(R.id.rvListings);
 
-        Listing[] myDataset = new Listing[1];
+        Listing[] myDataset = new Listing[2];
 
         myDataset[0] = new Listing();
+        myDataset[1] = new Listing();
+
 
         myDataset[0].setName("My house");
+        myDataset[1].setName("Your house");
+
 
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
